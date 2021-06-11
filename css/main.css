@@ -75,6 +75,7 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .header {
@@ -160,6 +161,70 @@ html {
   margin-left: 10px;
 }
 
+.aboutUs {
+  position: relative;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 30px;
+  margin: 50px 0px;
+}
+
+.aboutUs__icon {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  width: 40px;
+  z-index: 100;
+}
+
+.aboutUs__textArticle {
+  position: relative;
+  width: 95%;
+  max-width: 50rem;
+  background-color: #FFFFFF;
+  padding: 40px 30px;
+}
+
+.aboutUs__textArticle::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 100%;
+  height: 105%;
+  background-color: #F9F9F9;
+  padding: 0px;
+  z-index: -1;
+}
+
+.aboutUs__paragraph {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #303234;
+  margin: 30px 0px;
+}
+
+.aboutUs__paragraphAuthor {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.56;
+  color: #303234;
+}
+
+.aboutUs__SVG {
+  display: none;
+}
+
 @media screen and (min-width: 700px) {
   .header {
     position: relative;
@@ -174,13 +239,56 @@ html {
   .header__scrollBlueLine {
     height: 150px;
   }
+  .aboutUs {
+    margin: 100px 0px;
+  }
+  .aboutUs__icon {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    width: 50px;
+  }
+  .aboutUs__textArticle {
+    width: 70%;
+    padding: 40px 50px;
+    margin: 0 auto;
+  }
+  .aboutUs__textArticle::after {
+    height: 106%;
+  }
+  .aboutUs__paragraph {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .header {
     width: 90vw;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+  }
+  .aboutUs__icon {
+    position: absolute;
+    top: 8%;
+    left: 23%;
+    width: 70px;
+  }
+  .aboutUs__textArticle {
+    max-width: 60rem;
+    margin: 5.5rem 0px 0px calc(100% * 0.28);
+    padding: 40px 50px 40px 0px;
+  }
+  .aboutUs__paragraph {
+    font-size: 4rem;
+  }
+  .aboutUs__paragraphAuthor {
+    font-size: 1.6rem;
+  }
+  .aboutUs__SVG {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 20vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
