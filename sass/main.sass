@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "./_mixins"
 @import "./_topography"
 
 *,
@@ -15,24 +16,17 @@ html
     overflow-x: hidden
 
 .header
+    @include flexColumnCenter
     width: 100vw
     height: 100vh
-    display: flex
-    flex-direction: column
-    justify-content: center
-    padding: 0px 30px
-
+    align-items: flex-start
+    padding: 0 30px
+    
     &__underHeading
-        display: flex
-        flex-direction: row
-        align-items: center
-        align-content: center
-
+        @include flexRowCenter
+        
     &__underHeadingIconBox
-        display: flex
-        justify-content: center
-        align-content: center
-        align-items: center
+        @include flexRowCenter
         border: 1px solid $black
         border-radius: 50%
         margin-left: 10px
@@ -42,12 +36,10 @@ html
         padding: 5px
 
     &__scrollBox
+        @include flexRowCenter
         position: absolute
         top: 90vh
         left: 15vw
-        display: flex
-        align-content: center
-        align-items: center
 
     &__paragraphScroll
         font-size: 1.2rem
@@ -65,17 +57,12 @@ html
 
 .aboutUs
     position: relative
-    width: 100vw
-    display: flex
-    flex-direction: column
-    justify-content: center
-    padding: 0px 30px
-    margin: 50px 0px
+    @include sectionStyles
 
     &__icon
         position: absolute
-        top: 5%
-        left: 1%
+        top: 0%
+        left: 2%
         width: 40px
         z-index: 100
 
@@ -84,7 +71,7 @@ html
         width: 95%
         max-width: 50rem
         background-color: $white
-        padding: 40px 30px
+        padding: 0px 30px
 
         &::after
             content: ""
@@ -94,7 +81,6 @@ html
             width: 100%
             height: 105%
             background-color: $dirtyWhite
-            padding: 0px
             z-index: -1
 
     &__paragraph
@@ -115,33 +101,27 @@ html
 
 .colaboration
     position: relative
-    width: 100vw
-    display: flex
-    flex-direction: column
-    justify-content: center
-    padding: 50px 30px
-    margin: 50px 0px
+    @include sectionStyles
+    margin-bottom: 0px
 
     &__headingBoxWithIcon
-        display: flex
-        flex-direction: column
-        margin: 50px 0px
+        @include flexColumnCenter
+        align-items: flex-start
+        margin: 30px 0px
 
     &__icon
         width: 90px
-
-    &__span
-        font-weight: bold
-        color: $blue
-        padding-right: 10px
 
     &__list
         padding-left: 7px
 
     &__boxButton
         width: 100%
-        display: flex
-        justify-content: center
+        @include flexRowCenter
+        margin-top: 30px
+
+    &__counter
+        display: none
 
 @import "./_medium"
 @import "./_large"

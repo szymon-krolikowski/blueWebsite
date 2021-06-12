@@ -7,9 +7,7 @@ $dirtyWhite: #F9F9F9
 $white: #FFFFFF
     
 .subTitle
-    display: flex
-    align-items: center
-    align-content: center
+    @include flexRowCenter
     font-size: 1.5rem
     font-weight: 700
     text-transform: uppercase
@@ -33,7 +31,7 @@ $white: #FFFFFF
 .headingThree
     font-size: 2.2rem
     font-weight: 400
-    margin-bottom: 15px
+    margin-bottom: 10px
 
 .paragraphUnderHeading
     display: flex
@@ -56,11 +54,7 @@ li p
     margin-left: 10px
 
 .button
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-content: center
-    align-items: center
+    @include flexRowCenter
     font-size: 1.2rem
     font-weight: 700
     text-transform: uppercase

@@ -1,8 +1,6 @@
 @media screen and ( min-width: 992px )
     .header
-        width: 90vw
-        max-width: 1200px
-        margin: 0 auto
+        @include largeSectionStyles
 
     .aboutUs
 
@@ -30,12 +28,13 @@
             width: 20vw
 
     .colaboration
-        width: 90vw
-        max-width: 1200px
-        margin: 0 auto
+        @include largeSectionStyles
 
         &__icon
             width: 140px
 
         &__headingArticle
             padding-right: 12vw
+
+        &__boxButton
+            margin-top: 50px
