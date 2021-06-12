@@ -31,3 +31,47 @@
 
         &__paragraph
             font-size: 3rem
+
+    .colaboration
+        flex-direction: row
+
+        &__headingArticle
+            width: 50%
+            text-align: center
+            margin-top: 35px
+
+        &__textArticle
+            width: 50%
+
+        &__counter
+            display: flex
+            justify-content: center
+            margin-top: 10px
+
+        &__counterNumber
+            padding: 0px 40px
+
+        &__counterNumber:nth-last-child(odd)
+            border-left: 1px solid $blue
+
+        &__counterNumber:nth-last-child(even)
+            border-right: 1px solid $blue
+
+        &__headingBoxWithIcon
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+
+        &__icon
+            width: 100px
+            margin-top: -20px
+
+            &--first
+                margin-top: -35px
+
+        &__boxImage
+            width: 40%
+
+        &__boxText
+            width: 70%
+            
