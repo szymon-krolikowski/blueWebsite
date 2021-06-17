@@ -1,4 +1,7 @@
 @media screen and ( min-width: 700px )
+    .websiteTopSVG
+        width: 825px
+
     .header
         position: relative
 
@@ -55,7 +58,7 @@
         &__counterNumber:nth-last-child(even)
             border-right: 1px solid $blue
 
-        &__headingBoxWithIcon
+        &__boxWithIcon
             display: flex
             flex-direction: row
             justify-content: flex-start
@@ -71,4 +74,24 @@
             width: 40%
 
         &__boxText
-            width: 70%       
+            width: 70%   
+
+    .organization
+        position: relative
+
+        &__boxWithIcon
+            width: 47%
+
+        &__topArticle
+            @include flexRowCenter
+            justify-content: space-between
+            
+        &__bottomArticle
+            @include flexRowCenter
+            justify-content: space-between
+
+        &__icon
+            width: 100px
+
+        &__headingTwo
+            margin-bottom: 30px

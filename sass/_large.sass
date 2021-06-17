@@ -1,6 +1,61 @@
 @media screen and ( min-width: 992px )
+    .navigation
+        display: none
+
+    .navigationMain
+        width: 100vw
+        height: 70px
+        @include flexRowCenter
+        justify-content: space-between
+        padding: 20px 30px 0px
+        position: relative
+        z-index: 100
+        @include largeSectionStyles
+
+        &__dot
+            position: absolute
+            transform: matrix(1, 0, 0, 1, 22, 12)
+            width: 5px
+            height: 5px
+            background-color: $blue
+            border-radius: 50%
+
+        &__list
+            display: flex
+
+        &__elementList::marker
+            content: ""
+
+        &__link
+            font-weight: 400
+            text-decoration: none
+            color: $menuLinkColor
+            padding: 0px 80px 0px 0px
+
+    .websiteTopRightIconSVG
+        display: flex
+        position: absolute
+        top: 25px
+        right: 40px
+        z-index: 1000
+        @include flexRowCenter
+
+        &__circle
+            width: 5px
+            height: 5px
+            border-radius: 50%
+            background-color: $black
+
+    .websiteTopSVG
+        width: 90vw
+
     .header
         @include largeSectionStyles
+        height: calc(95vh - 90px)
+
+        &__scrollBox
+            top: 80vh
+            left: 176.5px
 
     .aboutUs
 
@@ -38,3 +93,22 @@
 
         &__boxButton
             margin-top: 50px
+
+    .organization
+        @include largeSectionStyles
+        margin-top: 150px
+
+        &__icon
+            width: 140px
+
+        &__headingTwo
+            margin-bottom: 80px
+
+        &__wrapper
+            left: -5vw
+            width: 150vw
+
+        &__boxWithIcon
+            margin: 10px 0px
+
+        
