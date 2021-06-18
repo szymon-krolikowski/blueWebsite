@@ -95,3 +95,34 @@
 
         &__headingTwo
             margin-bottom: 30px
+
+    .skills
+
+        &__boxWithIcon
+            width: 25%
+
+        &__boxWithIcon:nth-child(2)
+            border-right: none
+
+        &__icon
+            width: 90px
+
+        &__boxWithList
+            display: flex
+            justify-content: center
+            width: 33.33%
+            border-right: 1px solid $borderColor
+            padding-left: 0px
+
+            &--last
+                display: none
+                border-right: none
+
+            &--beforeTheLastOne
+                border-right: none
+        
+        &__articleWithList
+            padding: 0px
+            
+        &__unorderList
+            padding: 20px 0px

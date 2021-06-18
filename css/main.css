@@ -45,6 +45,12 @@
   margin-bottom: 10px;
 }
 
+.headingThreeSmall {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 .paragraphUnderHeading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +120,9 @@ li p {
   .headingTwo {
     font-size: 5rem;
     font-weight: 500;
+  }
+  .headingThreeSmall {
+    font-size: 1.6rem;
   }
   .subTitle {
     font-size: 1.9rem;
@@ -553,6 +562,98 @@ html {
   z-index: -1;
 }
 
+.skills {
+  width: 100vw;
+  padding: 0px 30px;
+  margin: 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills__articleWithIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skills__boxWithIcon {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0px 20px;
+  margin-top: 30px;
+}
+
+.skills__boxWithIcon:nth-child(odd) {
+  border-right: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+}
+
+.skills__boxWithIcon:nth-child(even) {
+  border-right: 1px solid #DDDDDD;
+}
+
+.skills__icon {
+  width: 90px;
+}
+
+.skills__paragraphMid {
+  margin-top: 50px;
+}
+
+.skills__articleWithList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-right: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+  padding: 20px 0px 20px;
+  margin-top: 20px;
+}
+
+.skills__boxWithList {
+  width: 100%;
+  padding-left: 30px;
+}
+
 @media screen and (min-width: 700px) {
   .websiteTopSVG {
     width: 825px;
@@ -694,6 +795,39 @@ html {
   }
   .organization__headingTwo {
     margin-bottom: 30px;
+  }
+  .skills__boxWithIcon {
+    width: 25%;
+  }
+  .skills__boxWithIcon:nth-child(2) {
+    border-right: none;
+  }
+  .skills__icon {
+    width: 90px;
+  }
+  .skills__boxWithList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33.33%;
+    border-right: 1px solid #DDDDDD;
+    padding-left: 0px;
+  }
+  .skills__boxWithList--last {
+    display: none;
+    border-right: none;
+  }
+  .skills__boxWithList--beforeTheLastOne {
+    border-right: none;
+  }
+  .skills__articleWithList {
+    padding: 0px;
+  }
+  .skills__unorderList {
+    padding: 20px 0px;
   }
 }
 
@@ -848,6 +982,32 @@ html {
   }
   .organization__boxWithIcon {
     margin: 10px 0px;
+  }
+  .skills {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .skills__icon {
+    width: 120px;
+  }
+  .skills__boxWithList {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px solid #DDDDDD;
+    padding-left: 0px;
+  }
+  .skills__boxWithList--last {
+    border-right: none;
+  }
+  .skills__paragraphMid {
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

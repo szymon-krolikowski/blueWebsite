@@ -187,5 +187,44 @@ html
         overflow: hidden
         z-index: -1
 
+.skills
+    @include sectionStyles
+
+    &__articleWithIcons
+        @include flexRowCenter
+        flex-wrap: wrap
+        margin-top: 10px
+
+    &__boxWithIcon
+        width: 50%
+        @include flexColumnCenter
+        padding: 5px 0px 20px
+        margin-top: 30px
+
+    &__boxWithIcon:nth-child(odd)
+        border-right: 1px solid $borderColor
+        border-left: 1px solid $borderColor
+
+    &__boxWithIcon:nth-child(even)
+        border-right: 1px solid $borderColor
+
+    &__icon
+        width: 90px
+
+    &__paragraphMid
+        margin-top: 50px
+
+    &__articleWithList
+        display: flex
+        flex-wrap: wrap
+        border-right: 1px solid $borderColor
+        border-left: 1px solid $borderColor
+        padding: 20px 0px 20px
+        margin-top: 20px
+
+    &__boxWithList
+        width: 100%
+        padding-left: 30px
+
 @import "./_medium"
 @import "./_large"
