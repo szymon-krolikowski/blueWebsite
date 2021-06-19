@@ -126,3 +126,56 @@
             
         &__unorderList
             padding: 20px 0px
+
+    .team
+        
+        &__firstArticle
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+
+        &__person
+            width: 50%
+
+        &__bigIcon
+            width: 90px
+            margin-left: 30px
+
+        &__personName
+            font-size: 2.2rem
+
+        &__role
+            font-size: 1.1rem
+
+        &__mail
+            font-size: 1.55rem
+
+    .statistic
+        @include flexRowCenter
+        justify-content: space-between
+        padding: 20px 30px
+
+        &::after
+            width: 85vw
+            top: 0
+            left: 0vw
+
+        &::before
+            width: 85vw
+            bottom: 0
+            left: 15vw
+
+        &__iconBox
+            width: 15vw
+
+        &__headingThree
+            font-size: 3rem
+            text-align: left
+
+    .footer
+        display: flex
+        align-content: center
+        align-items: center
+
+        &__paragraph
+            margin-top: 0px
